@@ -1,0 +1,197 @@
+/* style.css
+---------------------------------------*/
+
+/* 
+COLOR PALETTE
+https://coolors.co/ec368d-ebebeb-387780-210124-131200
+#EC368D - Deep Pink
+#EBEBEB - Platinum
+#387780 - Ming
+#210124 - Dark Purple
+#1F1A38 - Dark Purple
+#131200 - Black Chocolate
+*/
+
+/* Global Styles
+---------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #131200;
+  font-family: "Forum", cursive;
+}
+
+/* ------ h1 {
+  font-family: "Fredericka the Great", cursive;
+} ------ */
+
+/* To Center Everything In-Game */
+.game-full {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./images/zoltan-tasi-APvZiFU7v1A-unsplash.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Game Title
+---------------------------------------*/
+.title {
+  position: sticky;
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+/* ------ #startButton {
+  position: sticky;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 0.8rem;
+  width: 100px;
+  border-radius: 10px;
+  background: #387780;
+  outline: 2px;
+  border-color: #ec368d;
+  border-width: 5px;
+  border: solid;
+  cursor: pointer;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+/* Score Board
+---------------------------------------*/
+.score {
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  margin-top: 4rem;
+  font-weight: bold;
+}
+
+.playerScore,
+.computerScore {
+  color: #131200;
+  font-weight: bold;
+}
+
+/* Score
+---------------------------------------*/
+.p-count,
+.c-count {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Buttons Lined Up
+---------------------------------------*/
+.options {
+  display: flex;
+  width: 55vw;
+  justify-content: space-evenly;
+  margin-top: 2.5rem;
+}
+
+/* Buttons - Style
+---------------------------------------*/
+.rock,
+.paper,
+.scissors {
+  padding: 0.8rem;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 10px;
+  background: #387780;
+  outline: 2px;
+  border-color: #ec368d;
+  border-width: 5px;
+  border: solid;
+  cursor: pointer;
+}
+
+.rock:hover,
+.paper:hover,
+.scissors:hover {
+  background: rgb(56, 119, 128, 80%);
+}
+
+.move {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+.movesLeft {
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+/* Final Result of Game
+---------------------------------------*/
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  display: block;
+  font-size: 50px;
+  color: #131200;
+  height: 200px;
+  width: 250px;
+  background: #387780;
+  border: 5px;
+  border-color: #131200;
+  border-style: double;
+  border-radius: 30%;
+  cursor: pointer;
+}
+.result:hover {
+  background: rgb(56, 119, 128, 80%);
+}
+
+/* Reload Button - Style
+---------------------------------------*/
+.reload {
+  display: block;
+  font-size: 50px;
+  color: #131200;
+  height: 65px;
+  width: 85px;
+  background: #ec368d;
+  border: 5px;
+  border-color: #131200;
+  border: 5px;
+  border-style: double;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reload:hover {
+  background: rgb(236, 54, 141, 80%);
+}
+
+/* Responsive
+---------------------------------------*/
+@media screen and (max-width: 612px) {
+  .title {
+    text-align: center;
+  }
+  .score {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
+}
