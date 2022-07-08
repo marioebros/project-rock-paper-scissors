@@ -143,7 +143,7 @@ https://coolors.co/ec368d-ebebeb-387780-210124-131200
 
 /* Responsive
 ---------------------------------------*/
-@media screen and (max-width: 612px) {
+@media screen and (min-width: 360px) {
   .title {
     text-align: center;
   }
