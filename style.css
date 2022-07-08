@@ -46,7 +46,6 @@ https://coolors.co/ec368d-ebebeb-387780-210124-131200
   position: sticky;
   font-size: 3rem;
   font-weight: bolder;
-  /* margin-top: 1rem; */
   z-index: 2;
 }
 
@@ -143,14 +142,19 @@ https://coolors.co/ec368d-ebebeb-387780-210124-131200
 
 /* Responsive
 ---------------------------------------*/
-@media screen and (min-width: 360px) {
-  .title {
+@media screen and (max-width: 425px) {
+  .title,
+  .ties {
     text-align: center;
+    font-size: 2rem;
   }
-  .score {
-    position: absolute;
-    top: 200px;
-    width: 100vw;
+  .playerScore,
+  .playerChoice,
+  .computerScore,
+  .computerChoice {
+    position: sticky;
+    height: 75vw
+    width: 75vw;
   }
   .options {
     width: 100vw;
