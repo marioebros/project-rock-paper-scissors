@@ -44,7 +44,7 @@ https://coolors.co/ec368d-ebebeb-387780-210124-131200
 .title,
 .ties {
   position: sticky;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bolder;
   /* margin-top: 1rem; */
   z-index: 2;
@@ -52,15 +52,12 @@ https://coolors.co/ec368d-ebebeb-387780-210124-131200
 
 /* Score
 ---------------------------------------*/
-.ties {
-}
-
 .playerScore,
 .playerChoice,
 .computerScore,
 .computerChoice,
 .ties {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 /* .choices {
   display: flex;
