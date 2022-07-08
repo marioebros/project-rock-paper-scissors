@@ -14,106 +14,77 @@ https://coolors.co/ec368d-ebebeb-387780-210124-131200
 
 /* Global Styles
 ---------------------------------------*/
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #131200;
+  color: #ebebeb;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   font-family: "Forum", cursive;
 }
 
-/* ------ h1 {
-  font-family: "Fredericka the Great", cursive;
-} ------ */
-
-/* To Center Everything In-Game */
 .game-full {
   display: flex;
   flex-direction: column;
-  background-image: url(./images/zoltan-tasi-APvZiFU7v1A-unsplash.jpeg);
-  background-size: cover;
-  background-position: center;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
   justify-content: center;
   align-items: center;
+  background-image: url(./images/pawel-czerwinski-2WGz4B9ePyM-unsplash.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Game Title
 ---------------------------------------*/
-.title {
+.title,
+.ties {
   position: sticky;
   font-size: 4rem;
   font-weight: bolder;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   z-index: 2;
-}
-
-/* ------ #startButton {
-  position: sticky;
-  font-size: 2rem;
-  font-weight: bolder;
-  padding: 0.8rem;
-  width: 100px;
-  border-radius: 10px;
-  background: #387780;
-  outline: 2px;
-  border-color: #ec368d;
-  border-width: 5px;
-  border: solid;
-  cursor: pointer;
-  margin-top: 1rem;
-  z-index: 2;
-}
-
-/* Score Board
----------------------------------------*/
-.score {
-  display: flex;
-  width: 30vw;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 50px;
-  z-index: 1;
-  margin-top: 4rem;
-  font-weight: bold;
-}
-
-.playerScore,
-.computerScore {
-  color: #131200;
-  font-weight: bold;
 }
 
 /* Score
 ---------------------------------------*/
-.p-count,
-.c-count {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 2rem;
+.ties {
 }
 
-/* Buttons Lined Up
----------------------------------------*/
-.options {
-  display: flex;
-  width: 55vw;
-  justify-content: space-evenly;
-  margin-top: 2.5rem;
+.playerScore,
+.playerChoice,
+.computerScore,
+.computerChoice,
+.ties {
+  font-size: 2rem;
 }
+/* .choices {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+  margin-top: 200px;
+  position: absolute;
+  z-index: 1;
+} */
 
 /* Buttons - Style
 ---------------------------------------*/
 .rock,
+#rock,
 .paper,
-.scissors {
+#paper,
+.scissors,
+#scissors {
   padding: 0.8rem;
   font-size: 18px;
   font-weight: bold;
   width: 100px;
   border-radius: 10px;
-  background: #387780;
+  background: #1f1a38;
   outline: 2px;
   border-color: #ec368d;
   border-width: 5px;
@@ -122,61 +93,54 @@ https://coolors.co/ec368d-ebebeb-387780-210124-131200
 }
 
 .rock:hover,
+#rock:hover,
 .paper:hover,
-.scissors:hover {
-  background: rgb(56, 119, 128, 80%);
+#paper:hover,
+.scissors:hover,
+#scissors:hover {
+  background: rgb(31, 26, 56, 80%);
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
 }
 
-.move {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-top: 10rem;
+.active {
+  width: 110px;
+  height: 110px;
 }
 
-.movesLeft {
-  margin-top: 1rem;
-  font-size: 20px;
-}
-
-/* Final Result of Game
----------------------------------------*/
-.result {
+.winner {
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
-  font-size: 1.2rem;
-  display: block;
-  font-size: 50px;
-  color: #131200;
-  height: 200px;
-  width: 250px;
-  background: #387780;
-  border: 5px;
-  border-color: #131200;
-  border-style: double;
-  border-radius: 30%;
+  font-size: 25px;
   cursor: pointer;
 }
-.result:hover {
-  background: rgb(56, 119, 128, 80%);
+
+.winnerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Reload Button - Style
 ---------------------------------------*/
-.reload {
-  display: block;
-  font-size: 50px;
-  color: #131200;
-  height: 65px;
-  width: 85px;
+.reset {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  height: 105px;
+  width: 125px;
   background: #ec368d;
   border: 5px;
   border-color: #131200;
-  border: 5px;
   border-style: double;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.reload:hover {
+.reset:hover {
   background: rgb(236, 54, 141, 80%);
 }
 
