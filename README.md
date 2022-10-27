@@ -91,7 +91,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 
 - [![JavaScript][javascript]][javascript-url]
-- [![Webpack][webpack]][webpack-url]
 - [![CSS3][css3]][css3-url]
 - [![HTML5][html5]][html5-url]
 
