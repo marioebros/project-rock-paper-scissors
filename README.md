@@ -38,9 +38,7 @@
 <h3 align="center">Rock, Paper, Scissors</h3>
 
   <p align="center">
-    Skills: Basic html formatting. Continuing to get comfortable with the terminal Establishing the correct methods for naming and storing projects and links, etc.
-
-    Self-Reflection: Completing one entire project. Having a solid first portfolio project to display my self-taught skills. Understanding HTML basics Understanding CSS and applying it well
+    Skills: Basic html formatting. Continuing to get comfortable with the terminal Establishing the correct methods for naming and storing projects and links, etc Self-Reflection: Completing one entire project. Having a solid first portfolio project to display my self-taught skills. Understanding HTML basics Understanding CSS and applying it well
     <br />
     <a href="https://github.com/marioebros/project-rock-paper-scissors"><strong>Explore the docs »</strong></a>
     <br />
